@@ -7,7 +7,7 @@ n = int(input('Введите число:'))
 s = 0
 for i in range(1, n + 1):
     # d = (1 + 1 / i) ** i
-    print(f'{i}:{(1 + 1 / i) ** i}')
+    print(f'{i}:{round((1 + 1 / i) ** i,2)}')
     s = s + (1 + 1 / i) ** i
 # s = s + d
 print(f'Сумма равна {round(s,2)}')
